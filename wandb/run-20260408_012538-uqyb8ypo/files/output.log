@@ -1,0 +1,30 @@
+  0%|▊                                                                                                                                                        | 246/50000 [18:36<91:47:39,  6.64s/it]Traceback (most recent call last):
+{'loss': 6.8079, 'grad_norm': 9.60973072052002, 'learning_rate': 1.9961600000000002e-05, 'epoch': 0.02}
+{'loss': 6.1567, 'grad_norm': 6.732184886932373, 'learning_rate': 1.9921600000000003e-05, 'epoch': 0.04}
+  File "c:\Users\Ujjwal Bajpayee\Desktop\Research Highlights\Generating-Research-Highlights-from-Scientific-Literature\src\train.py", line 36, in <module>
+    train_model("data/MixSub-SciHigh_train_FIRE.csv", "data/MixSub-SciHigh_val_FIRE.csv")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Ujjwal Bajpayee\Desktop\Research Highlights\Generating-Research-Highlights-from-Scientific-Literature\src\train.py", line 31, in train_model
+    trainer.train()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Ujjwal Bajpayee\AppData\Roaming\Python\Python313\site-packages\transformers\trainer.py", line 2328, in train
+    return inner_training_loop(
+        args=args,
+    ...<2 lines>...
+        ignore_keys_for_eval=ignore_keys_for_eval,
+    )
+  File "C:\Users\Ujjwal Bajpayee\AppData\Roaming\Python\Python313\site-packages\transformers\trainer.py", line 2623, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches, args.device)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal Bajpayee\AppData\Roaming\Python\Python313\site-packages\transformers\trainer.py", line 5581, in get_batch_samples
+    batch_samples.append(next(epoch_iterator))
+                         ~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal Bajpayee\AppData\Roaming\Python\Python313\site-packages\accelerate\data_loader.py", line 577, in __iter__
+    current_batch = send_to_device(current_batch, self.device, non_blocking=self._non_blocking)
+  File "C:\Users\Ujjwal Bajpayee\AppData\Roaming\Python\Python313\site-packages\accelerate\utils\operations.py", line 153, in send_to_device
+    return tensor.to(device, non_blocking=non_blocking)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ujjwal Bajpayee\AppData\Roaming\Python\Python313\site-packages\transformers\tokenization_utils_base.py", line 810, in to
+    k: v.to(device=device, non_blocking=non_blocking) if hasattr(v, "to") and callable(v.to) else v
+       ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,42 @@
+{
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "CPython 3.13.3",
+  "startedAt": "2026-04-07T19:55:38.515569Z",
+  "program": "c:\\Users\\Ujjwal Bajpayee\\Desktop\\Research Highlights\\Generating-Research-Highlights-from-Scientific-Literature\\src\\train.py",
+  "codePath": "src\\train.py",
+  "git": {
+    "remote": "https://github.com/Ujjwal-Bajpayee/Generating-Research-Highlights-from-Scientific-Literature.git",
+    "commit": "f5e2908220567178ca4767db9278d7cc8a5f3db1"
+  },
+  "email": "ujjwalprakash02@gmail.com",
+  "root": "C:\\Users\\Ujjwal Bajpayee\\Desktop\\Research Highlights\\Generating-Research-Highlights-from-Scientific-Literature",
+  "host": "LAPTOP-PD9HBIMS",
+  "executable": "C:\\Program Files\\Python313\\python.exe",
+  "codePathLocal": "src\\train.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "426594603008",
+      "used": "282967105536"
+    }
+  },
+  "memory": {
+    "total": "16989728768"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "memoryTotal": "6439305216",
+      "cudaCores": 2560,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.7"
+}
